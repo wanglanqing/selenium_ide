@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://testbcmp.ihydt.com/" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<!--打开页面，并查询要操作的数据-->
+<tr>
+	<td>open</td>
+	<td>a/knowledge/index.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>陀螺</td>
+	<td>knowTitle</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=searchName</td>
+	<td>${knowTitle}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=knowledgeSearchBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=//table[@id='datatable_ajax']/tbody/tr[1]/td[2]</td>
+	<td>${knowTitle}</td>
+</tr>
+<!--请求发布-->
+<tr>
+	<td>click</td>
+	<td>css=.fa.fa-check</td>
+	<td></td>
+</tr>
+<!--选择审批人-->
+<tr>
+	<td>click</td>
+	<td>id=addApproveOrgTreeInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>兰青</td>
+	<td>approveUserName</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//ul[@id='addApproveOrgTree']/li[1]/ul[1]/li/a/span[contains(text(),'刘平')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=maxlength_textarea</td>
+	<td>申请描述自动填写的信息。</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//button[@id='submitApproveBtn']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.toast-message</td>
+	<td>知识发布申请成功</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=//table/tbody/tr/td[4]</td>
+	<td>待发布</td>
+</tr>
+</tbody></table>
+</body>
+</html>

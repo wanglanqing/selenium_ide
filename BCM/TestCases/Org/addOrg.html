@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://testbcmp.ihydt.com/" />
+<title>addOrg</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">addOrg</td></tr>
+</thead><tbody>
+<!--打开组织页面-->
+<tr>
+	<td>open</td>
+	<td>a/org/organization.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>子组织恩</td>
+	<td>OrgName</td>
+</tr>
+<!--点击添加子组织按钮-->
+<tr>
+	<td>click</td>
+	<td>id=addChildOrgBtn</td>
+	<td></td>
+</tr>
+<!--子组织表单-->
+<tr>
+	<td>type</td>
+	<td>name=oName</td>
+	<td>${OrgName}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=isLogic</td>
+	<td>逻辑</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@class='selections']/div/div[2]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=phone</td>
+	<td>010-89876543</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=fax</td>
+	<td>010-89876543</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=address</td>
+	<td>云景北大街198号</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=maxlength_textarea</td>
+	<td>跟你说点啥呢？</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=submitBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.toast.toast-success</td>
+	<td>×添加组织成功</td>
+</tr>
+</tbody></table>
+</body>
+</html>

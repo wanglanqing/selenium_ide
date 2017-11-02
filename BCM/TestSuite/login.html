@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.zhaopin.com" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<!--1.打开智联页面-->
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<!--2.登录-->
+<tr>
+	<td>type</td>
+	<td>css=#loginname</td>
+	<td>wanglanqing1122@126.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=.Password</td>
+	<td>wlq11576460</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=.logbtn&gt;button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>6</td>
+	<td></td>
+</tr>
+<!--3.关闭弹出页面-->
+<tr>
+	<td>click</td>
+	<td>css=.fr.popup_close</td>
+	<td></td>
+</tr>
+<!--4.刷新简历-->
+<tr>
+	<td>click</td>
+	<td>css=.myLinkA.linkRefresh</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3.entH.setH</td>
+	<td>刷新成功</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=.close&gt;img</td>
+	<td></td>
+</tr>
+<!--5.查看申请记录-->
+<tr>
+	<td>click</td>
+	<td>css=.basCole&gt;span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//ul[@id='setTab']/li[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>e:\beViewed.png</td>
+	<td></td>
+</tr>
+<!--6.登出-->
+</tbody></table>
+</body>
+</html>

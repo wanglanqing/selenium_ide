@@ -1,0 +1,3 @@
+<testdata>
+	<test username="13912345678" pwd="admin123" validatecode="1111" msghint="该用户已被禁用,禁止登录."/>
+</testdata>

@@ -1,0 +1,5 @@
+<testdata>
+	<test username="ss" username_err="请输入邮箱或手机号码"/>
+	<test username="1324131" username_err="请输入邮箱或手机号码"/>
+	<test username="invalid@" username_err="请输入邮箱或手机号码"/>
+</testdata>	

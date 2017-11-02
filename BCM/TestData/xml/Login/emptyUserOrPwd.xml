@@ -1,0 +1,3 @@
+<testdata>
+	<test userhint="请输入邮箱或手机号码" pwdhint="请输入密码" validatehint="请输入验证码."/>
+</testdata>	

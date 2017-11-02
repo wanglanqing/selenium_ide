@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://testbcmp.ihydt.com/" />
+<title>addUser</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">addUser</td></tr>
+</thead><tbody>
+<!--打开用户页面>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#href_20_Id &gt; span.title</td>
+	<td></td>
+</tr-->
+<!--点击新建按钮-->
+<tr>
+	<td>open</td>
+	<td>/a/user/getuserinfolist?param=.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#addUserBtn</td>
+	<td></td>
+</tr>
+<!--选择组织-->
+<tr>
+	<td>click</td>
+	<td>id=addOrgTreeInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=addOrgTree_1_switch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=addOrgTree_1_check</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label.control-label.col-md-3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.form-body</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=addHeadImg</td>
+	<td></td>
+</tr>
+<!--录入表单信息-->
+<tr>
+	<td>type</td>
+	<td>id=addUserName</td>
+	<td>黄粉红</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#uniform-addFemale &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=addFemale</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.checked</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=addFemale</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addEmail</td>
+	<td>wanglanqing1122@126.com</td>
+</tr>
+<tr>
+	<td>doubleClick</td>
+	<td>css=label:contains(&quot;邮箱&quot;)</td>
+	<td></td>
+</tr>
+<!--tr>
+	<td>verifyText</td>
+	<td>id=addEmail-error</td>
+	<td>该邮箱已注册</td>
+</tr-->
+<tr>
+	<td>type</td>
+	<td>id=addMobile</td>
+	<td>13011094548</td>
+</tr>
+<!--tr>
+	<td>verifyText</td>
+	<td>id=addMobile-error</td>
+	<td>该手机号已注册</td>
+</tr-->
+<tr>
+	<td>click</td>
+	<td>id=addOfficephone</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addOfficephone</td>
+	<td>010-89876543</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addHomephone</td>
+	<td>010-89876543</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addWx</td>
+	<td>wx</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addQQ</td>
+	<td>89876543</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addSkype</td>
+	<td>89876543</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addRemark</td>
+	<td>89876543</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>id=addRoleListName</td>
+	<td>label=应急指挥</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>id=addRoleListName</td>
+	<td>label=应急处置</td>
+</tr>
+<!--点击保存按钮-->
+<tr>
+	<td>click</td>
+	<td>id=saveUserBtn</td>
+	<td></td>
+</tr>
+<!--验证添加-->
+<tr>
+	<td>verifyText</td>
+	<td>id=addEmail-error</td>
+	<td>该邮箱已注册</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=addMobile-error</td>
+	<td>该手机号已注册</td>
+</tr>
+<!--tr>
+	<td>verifyText</td>
+	<td>css=div.toast-message</td>
+	<td>添加成功</td>
+</tr-->
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://testbcmp.ihydt.com/" />
+<title>Login</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Login</td></tr>
+</thead><tbody>
+<!--【username和pwd为空，及格式验证】-->
+<!--1.username和pwd为空-->
+<!--2.username格式验证-->
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>loadTestData</td>
+	<td>file:///E:/selTest/BCM/TestData/xml/Login/emptyUserOrPwd.xml</td>
+	<td></td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>!testdata.EOF()</td>
+	<td></td>
+</tr>
+<tr>
+	<td>nextTestData</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${userhint}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=username-error</td>
+	<td>${userhint}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=password-error</td>
+	<td>${pwdhint}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=validateCode-error</td>
+	<td>${validatehint}</td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

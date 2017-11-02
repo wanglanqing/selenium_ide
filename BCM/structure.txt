@@ -1,0 +1,16 @@
+文件夹 PATH 列表
+卷序列号为 00000048 8C39:5E61
+C:.
+├─ResultPics
+├─TestCases
+│  ├─Know
+│  ├─Login
+│  ├─Org
+│  ├─Role
+│  └─User
+├─TestData
+│  ├─csv
+│  ├─js
+│  └─xml
+├─TestResult
+└─TestSuite

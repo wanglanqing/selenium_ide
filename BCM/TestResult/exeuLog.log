@@ -1,0 +1,40 @@
+[error] Timed out after 50000ms
+[error] Element css=#href_20_Id > span.title not found
+[error] Element css=#addUserBtn not found
+[error] Element css=td[title="13011094548"] not found
+[error] Element id=userIdList not found
+[error] Element css=div.toast.toast-success not found
+[error] There was an unexpected Alert! [ }pn1%÷ÍÕ]
+[error] Element name=id[] not found
+[error] Element xpath=//table/tbody/tr/td[3] not found
+[error] Element css=div.toast-message not found
+[error] Unexpected Exception: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [nsIFileOutputStream.init]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: chrome://selenium-ide/content/selenium-core/scripts/selenium-api.js :: newFileOutputStream :: line 3112"  data: no]. toString -> function toString() {
+    [native code]
+}, message -> Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [nsIFileOutputStream.init], result -> 2152857618, name -> NS_ERROR_FILE_NOT_FOUND, filename -> chrome://selenium-ide/content/selenium-core/scripts/selenium-api.js, lineNumber -> 3112, columnNumber -> 0, data -> null, stack -> newFileOutputStream@chrome://selenium-ide/content/selenium-core/scripts/selenium-api.js:3112:13
+Selenium.prototype.doCaptureEntirePageScreenshot@chrome://selenium-ide/content/selenium-core/scripts/selenium-api.js:3197:28
+retval@chrome://selenium-ide/content/selenium-core/scripts/htmlutils.js:60:12
+ActionHandler.prototype.execute@chrome://selenium-ide/content/selenium-core/scripts/selenium-commandhandlers.js:314:28
+_executeCurrentCommand@chrome://selenium-ide/content/selenium-runner.js:306:19
+resume@chrome://selenium-ide/content/selenium-core/scripts/selenium-executionloop.js:78:13
+retval@chrome://selenium-ide/content/selenium-core/scripts/htmlutils.js:60:12
+, location -> JS frame :: chrome://selenium-ide/content/selenium-core/scripts/selenium-api.js :: newFileOutputStream :: line 3112
+[error] Unexpected Exception: SyntaxError: illegal character. 
+[error] Unexpected Exception: SyntaxError: illegal character. 
+[error] Unexpected Exception: SyntaxError: missing ; before statement. 
+[error] Unexpected Exception: SyntaxError: missing ; before statement. 
+[error] Unexpected Exception: SyntaxError: missing ; before statement. 
+[error] Unexpected Exception: SyntaxError: missing ; before statement. 
+[error] Unexpected Exception: SyntaxError: unterminated string literal. 
+[error] Unexpected Exception: SyntaxError: unterminated string literal. 
+[error] Unexpected Exception: SyntaxError: unterminated string literal. 
+[error] Unexpected Exception: SyntaxError: missing ; before statement. 
+[error] Unexpected Exception: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [nsIFileOutputStream.init]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: chrome://selenium-ide/content/selenium-core/scripts/selenium-api.js :: newFileOutputStream :: line 3112"  data: no]. toString -> function toString() {
+    [native code]
+}, message -> Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [nsIFileOutputStream.init], result -> 2152857618, name -> NS_ERROR_FILE_NOT_FOUND, filename -> chrome://selenium-ide/content/selenium-core/scripts/selenium-api.js, lineNumber -> 3112, columnNumber -> 0, data -> null, stack -> newFileOutputStream@chrome://selenium-ide/content/selenium-core/scripts/selenium-api.js:3112:13
+Selenium.prototype.doCaptureEntirePageScreenshot@chrome://selenium-ide/content/selenium-core/scripts/selenium-api.js:3197:28
+retval@chrome://selenium-ide/content/selenium-core/scripts/htmlutils.js:60:12
+ActionHandler.prototype.execute@chrome://selenium-ide/content/selenium-core/scripts/selenium-commandhandlers.js:314:28
+_executeCurrentCommand@chrome://selenium-ide/content/selenium-runner.js:306:19
+resume@chrome://selenium-ide/content/selenium-core/scripts/selenium-executionloop.js:78:13
+retval@chrome://selenium-ide/content/selenium-core/scripts/htmlutils.js:60:12
+, location -> JS frame :: chrome://selenium-ide/content/selenium-core/scripts/selenium-api.js :: newFileOutputStream :: line 3112

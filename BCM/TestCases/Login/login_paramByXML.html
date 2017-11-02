@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://testbcmp.ihydt.com/" />
+<title>login</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">login</td></tr>
+</thead><tbody>
+<!--登录BCM-->
+<!--1.验证错误登录5次时，锁定-->
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>row</td>
+</tr>
+<tr>
+	<td>loadTestData</td>
+	<td>file:///C:/Users/ei/Desktop/fairy/selenium/SelIDE/BCM/TestData/xml/login.xml</td>
+	<td></td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>!testdata.EOF()</td>
+	<td></td>
+</tr>
+<tr>
+	<td>nextTestData</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/a/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>${username}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>${password}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=validateCode</td>
+	<td>${validcode}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.toast-message</td>
+	<td>${toast}</td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>C:\Users\ei\Desktop\fairy\selenium\SelIDE\BCM\ResultPics\${toast}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<!--2.验证登录时，表单验证-->
+<!-----验证email格式-->
+<tr>
+	<td>open</td>
+	<td>/a/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>sdfs!sf@.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=username-error</td>
+	<td>请输入邮箱或手机号码</td>
+</tr>
+<!-----验证手机格式-->
+<tr>
+	<td>open</td>
+	<td>/a/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>12312345</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotText</td>
+	<td>id=username-error</td>
+	<td>请输入邮箱</td>
+</tr>
+<!-----验证username和密码为空-->
+<tr>
+	<td>open</td>
+	<td>/a/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=username-error</td>
+	<td>请输入邮箱或手机号码</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=password-error</td>
+	<td>请输入密码</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=validateCode-error</td>
+	<td>请输入验证码.</td>
+</tr>
+<!--3.验证登录成功-->
+<tr>
+	<td>open</td>
+	<td>/a/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>13119000002</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>admin123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=validateCode</td>
+	<td>1111</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
